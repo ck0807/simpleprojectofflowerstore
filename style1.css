@@ -1,0 +1,26 @@
+  
+        .box {
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: auto;
+            text-align: center;
+            border-image: 1px;
+            border: 0px solid white;
+        }
+        
+        .content {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            border: black;
+        }
+        .word {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+        img {
+            width: 350px;
+            height: 400px;
+        }

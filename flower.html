@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+</head>
+<body>
+    <h1>Innovator</h1>
+<p>Pick flowers to have a nice moon.</p>
+<ul>
+    
+    <li ><a href="contact.html" target="_blank">Contact Us</a></li>
+    <li ><a href="decoration.html" target="_blank">Decorations</a></li>
+    <li ><a class="active" href="flower.html" target="_blank">Flowers</a></li>
+    <li><a href="index.html">Home</a></li>
+</ul>
+
+<div class="content">
+    <div class="box">
+        <div><img src="img/rose.jpeg" alt="pink & red"></div>
+        <div class="word">Full in Love</div>
+        <div class="word">$99</div>
+        <form>
+            <p>Amount: <input type = 'text' id='num1'></p>
+        </form>
+    </div>
+    <div class="box">
+        <div><img src="img/rose1.jpg" alt="beautiful thing"></div>
+        <div class="word">The Beautiful thing</div>
+        <div class="word">$89</div>
+        <form>
+            <p>Amount: <input type = 'text' id='num2'></p>
+        </form>
+    </div>
+    <div class="box">
+        <div><img src="img/rose2.png" alt="proud momnet"></div>
+        <div class="word">Proud moment</div>
+        <div class="word">$79</div>
+        <form>
+            <p>Amount: <input type = 'text' id='num3'></p>
+        </form>
+    </div>
+    <div class="box">
+        <div><img src="img/rose3.jpeg" alt="pursue love"></div>
+        <div class="word">Chasing Love</div>
+        <div class="word">$99</div>
+        <form>
+            <p>Amount: <input type = 'text' id='num4'></p>
+        </form>
+    </div>
+    <div class="box">
+        <div><img src="img/rose4.jpeg" alt="heart"></div>
+        <div class="word">All my Love</div>
+        <div class="word">$109</div>
+        <form>
+            <p>Amount: <input type = 'text' id='num5'></p>
+        </form>
+    </div>
+    <div class="box">
+        <div><img src="img/rose5.jpeg" alt="pure love"></div>
+        <div class="word">Pure Love</div>
+        <div class="word">$89</div>
+        <form>
+            <p>Amount: <input type = 'text' id='num6'></p>
+        </form>
+    </div>
+    <br>
+    <input type = 'submit' onclick='func1();'>
+    <p id='response'></p>
+    <script>
+        function func1() {
+            var num1 = Number(document.getElementById('num1').value);
+            var num2 = Number(document.getElementById('num2').value);
+            var num3 = Number(document.getElementById('num3').value);
+            var num4 = Number(document.getElementById('num4').value);
+            var num5 = Number(document.getElementById('num5').value);
+            var num6 = Number(document.getElementById('num6').value);
+             
+            
+            var sum = num1 * 99 + num2 * 89 + num3 * 79 + num4 * 99 + num5 * 109 + num6 * 89; 
+            
+            
+            if (sum >= 200) {
+            
+            document.getElementById('response').innerHTML = "After $200, you have 20% off, that your total is $: " + sum * 0.8;
+        }   
+            else { 
+                document.getElementById('response').innerHTML = 'Your total is $' + sum;
+            }
+        }
+    </script>
+    
+</body>
+<footer>
+    Copyright &copy; cs120 2021 Xingping Kuang
+
+</footer>
+</html>

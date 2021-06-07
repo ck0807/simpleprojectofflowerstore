@@ -1,0 +1,91 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: darkseagreen;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#layout {
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 1fr 1fr;
+   
+
+}
+#layout div {
+    border: 1px solid black;
+  
+}
+
+#color {
+    background-color: mediumseagreen;
+    text-decoration: none;
+    text-align: center;
+    font-family: fantasy;
+    font-size: large;
+    
+
+}
+#botton1 {
+    background-color: white;
+    border:1px solid black;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#w2o {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#link_layout {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+#link_layout div {
+    flex: 1 1 auto;
+    
+    text-align: center;
+
+}
